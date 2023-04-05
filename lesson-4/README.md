@@ -70,3 +70,5 @@ Tweak the diagram, run the code gen, see the example live.
 
 # Onwards!
 Now we get to the language specific stuff :)
+
+See [lesson 5 README.md](../lesson-5/README.md).
