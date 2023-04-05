@@ -1,0 +1,30 @@
+<html>
+    <script src="LightSm.js"></script> <!-- generated state machine file -->
+
+    <body>
+        Output:
+        <pre id="output" style="border:1px solid black;"></pre>
+    </body>
+
+    <!-- script below html <body> so that we can modify output HTML element -->
+    <script>
+        let stateMachine = new LightSm();
+        stateMachine.start();
+
+        // this dispatches the DO event to the state machine every 100ms
+        window.setInterval(() => {
+            stateMachine.dispatchEvent(LightSm.EventId.DO);
+        }, 100);
+
+        // this function will dispatch the TIMEOUT event to our state machine after the specified amount of ms.
+        function startSmTimeout(timeoutMs) {
+            window.setTimeout(() => {
+                stateMachine.dispatchEvent(LightSm.EventId.TIMEOUT);
+            }, timeoutMs);
+        }
+
+        function appendToOutput(message) {
+            document.getElementById("output").prepend(message);
+        }
+    </script>
+</html>

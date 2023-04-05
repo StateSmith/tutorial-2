@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Below properties aren't needed. They just show how you can have the state machines generated before the build -->
+  <!-- You could instead just run the command below manually. -->
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet script LightSm.csx" />
+  </Target>
+  <PropertyGroup>
+    <!-- https://stackoverflow.com/questions/28916414/visual-studio-add-pre-build-event-that-always-runs-c-project -->
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+
+
+</Project>
