@@ -1,4 +1,4 @@
-# Hey There! 🚀
+# Multi Programming Language Tutorial 🚀
 This tutorial will get you up and running with StateSmith as quick as possible.
 
 The instructions are cross platform and work with all supported programming languages.
