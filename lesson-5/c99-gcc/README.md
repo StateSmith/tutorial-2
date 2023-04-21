@@ -2,7 +2,7 @@
 This example directory is tailored to using gcc.
 
 # See .csx File
-See [LightSm.csx](./LightSm.csx).
+See [src/LightSm.csx](./src/LightSm.csx).
 
 Discord or github if you have any problems or questions.
 
