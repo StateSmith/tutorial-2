@@ -13,7 +13,7 @@ Otherwise, install the excellent [vscode extension](https://marketplace.visualst
 
 
 # Open vscode In Project Repo Root (Or Each Lesson Dir)
-Why? Simply because the `.vscode/settings.json` files in each lesson directory (or repo root) are setup to load the StateSmith plugin when you open a drawio file. More [info here](https://github.com/StateSmith/StateSmith-drawio-plugin/wiki/Installation) if you want to use different paths.
+Why? Simply because the `.vscode/settings.json` files in each lesson directory (or repo root) are setup to load the StateSmith plugin when you open a drawio file. More info available on [Use with vscode wiki page](https://github.com/StateSmith/StateSmith-drawio-plugin/wiki/Use-with-vscode) if you want to use different paths.
 
 
 
