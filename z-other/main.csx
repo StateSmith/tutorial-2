@@ -95,7 +95,7 @@ static void UpdateStateSmithNugetReference(string filePath)
         (.*?) "
         """);
 
-    var newText = regex.Replace(text, "$1" + " 0.8.13-alpha\"");
+    var newText = regex.Replace(text, "$1" + " 0.9.2-alpha\"");
     if (newText != text)
     {
         WriteLine(filePath);

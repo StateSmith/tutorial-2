@@ -1,5 +1,5 @@
 #!/usr/bin/env dotnet-script
-#r "nuget: StateSmith, 0.8.13-alpha"
+#r "nuget: StateSmith, 0.9.2-alpha"
 
 using StateSmith.Common;
 using StateSmith.Input.Expansions;
