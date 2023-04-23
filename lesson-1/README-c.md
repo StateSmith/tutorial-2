@@ -1,43 +1,5 @@
-# Install The `draw.io vscode` Extension
-You don't have to download the vscode extension, but it is highly recommended. It will automatically load our StateSmith plugin for draw.io which adds some very helpful features.
-
-If you want to use the regular draw.io program or website, see [this link for details](https://github.com/StateSmith/StateSmith/wiki/Getting-started-using-draw.io-with-StateSmith).
-
-Otherwise, install the excellent [vscode extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio).
-
-![](docs/vscode-extension-stats.png)
-
-
-
-<br>
-
-
-# Open vscode In Project Repo Root (Or Each Lesson Dir)
-Why? Simply because the `.vscode/settings.json` files in each lesson directory (or repo root) are setup to load the StateSmith plugin when you open a drawio file. More info available on [Use with vscode wiki page](https://github.com/StateSmith/StateSmith-drawio-plugin/wiki/Use-with-vscode) if you want to use different paths.
-
-
-
-
-<br>
-
-
-# Let's Edit The Diagram
-Assuming you've installed the vscode extension above, open the `LightSm.drawio.svg` file with vscode.
-
-The vscode-drawio extension will ask you if you want to load the StateSmith-drawio-plugin:
-
-![](docs/allow-prompt.png)
-
-Click `Allow` if you trust it. I do :) You can see and even tweak [your local copy source](.vscode/StateSmith-drawio-plugin-v0.5.0.js).
-
-
-
-
-
-<br>
-
-# Confirm StateSmith Plugin Loaded
-If everything worked as expected, you should see something like below. Note the highlighted sections.
+# Confirm StateSmith plugin loaded
+If the last step was successful, you should see something like below. Note the highlighted sections.
 
 ![](docs/ss-plugin-1.png)
 
@@ -131,4 +93,4 @@ Same as before. Open `index.html` in a browser and send events to your state mac
 <br>
 
 # On To The Next Lesson
-Checkout the [lesson 2 README.md](../lesson-2/README.md).
+⏭️ Checkout the [lesson 2 README.md](../lesson-2/README.md).

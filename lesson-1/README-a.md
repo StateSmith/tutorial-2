@@ -118,4 +118,4 @@ In the future, StateSmith will have a standalone CLI tool and will not need .csx
 <br>
 
 # Let's Edit The Diagram!
-Head over to [README2.md](./README2.md)
+⏭️ Head over to [README-b.md](./README-b.md)
