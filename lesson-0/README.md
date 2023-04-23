@@ -22,4 +22,4 @@ https://statesmith.github.io/fundamentals-1/
 <br>
 
 # Onward!
-See [lesson-1 README1.md](../lesson-1/README1.md).
+⏭️ See [lesson-1 README](../lesson-1/README-a.md).
