@@ -9,8 +9,9 @@ using StateSmith.Output.UserConfig;
 using StateSmith.Runner;
 using StateSmith.SmGraph;
 
-// NOTE!!! Idiomatic C++ code generation coming
+// NOTE!!! Idiomatic C++ code generation is coming. This will improve.
 // See https://github.com/StateSmith/StateSmith/issues/126
+// and https://github.com/StateSmith/StateSmith/issues/185
 SmRunner runner = new(diagramPath: "LightSm.drawio.svg", new LightSmRenderConfig(), transpilerId: TranspilerId.C99);
 var customizer = runner.GetExperimentalAccess().DiServiceProvider.GetInstanceOf<GilToC99Customizer>();
 customizer.CFileNameBuilder = (StateMachine sm) => $"{sm.Name}.cpp";
