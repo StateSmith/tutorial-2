@@ -13,7 +13,7 @@ This lesson assumes you've covered the previous ones.
 dotnet-script LightSm.csx
 ```
 
-Or actually just build the `LightController` project normally from the command line or Visual Studio. While not required, the [LightController.csproj](./LightController.csproj) has been modified to automatically run the StateSmith code generation before building the regular project. Feel free to remove. Probably nice for small projects, but bad for the rest.
+Or actually just build the `LightController` project normally from the command line or Visual Studio. While not required, the [LightController.csproj](./LightController.csproj) has been modified to automatically run the StateSmith code generation before building the regular project. Feel free to remove. Probably nice for small projects, but bad for large ones as it uses `DisableFastUpToDateCheck`.
 
 ```
 > dotnet build
