@@ -39,4 +39,4 @@ Discord or github if you have any problems or questions.
 Thanks! - Adam
 
 # Want a more complicated example?
-See https://github.com/StateSmith/StateSmith-examples/tree/main/csharp/
+See https://github.com/StateSmith/StateSmith-examples
