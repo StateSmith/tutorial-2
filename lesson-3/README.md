@@ -129,26 +129,7 @@ Feel free to run the code gen and play with the design by opening `index.html` i
 <br>
 
 # Helpful Tips
-[C# interpolated strings](https://www.w3schools.com/cs/cs_strings_interpol.php) are very handy here:
-```c#
-string menu_at_top() => $"""Display_{AutoNameCopy()}()"""; 
-// expands to "Display_menu_at_top()"
-```
-
-To avoid having to escape characters, you can also use [C# interpolated raw string literals](https://thecodeblogger.com/2022/09/17/c-11-what-are-raw-string-literals/):
-```c#
-string say_hi() => $"""window.alert("Hi!")""";
-```
-
-Expansions are helpful for when you want to omit an enumeration prefix. Using the below expansions, you can write 
-* `set_option_class(ARCHER)` instead of 
-* `set_option_class(PlayerClass_ARCHER)`
-
-```c#
-public string set_option_class(string class_name) => $"this.option_value = PlayerClass_{class_name}";
-// `set_option_class(ARCHER)` expands to `this.option_value = PlayerClass_ARCHER`
-```
-
+See the [Expansions wiki page](https://github.com/StateSmith/StateSmith/wiki/Expansions) for more tips and as a quick reference.
 
 
 
