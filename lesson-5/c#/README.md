@@ -29,7 +29,7 @@ MSBuild version 17.4.1+9a89d02ff for .NET
 ```
 
 # Run The Example Project
-Use `dotnet run` or GUI.
+Use `dotnet run` or GUI. Note that it runs the code gen first so there's a bit of a delay.
 
 # See .csx File
 See [LightSm.csx](./LightSm.csx).
