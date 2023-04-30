@@ -105,10 +105,11 @@ static void UpdateStateSmithNugetReference(string filePath)
 
 void UpdateCProjects()
 {
-    // copy gcc files to msvc
-    var c99GccDir = $"{thisDir}/../lesson-5/c99-gcc/";
-    var c99MsvcDir = $"{thisDir}/../lesson-5/c99-msvc/";
-    CopyDirectory($"{c99GccDir}/src/", $"{c99MsvcDir}/src/", recursive: false);
+    // gcc example diverges from msvc example now. don't copy over anymore.
+    // // copy gcc files to msvc
+    // var c99GccDir = $"{thisDir}/../lesson-5/c99-gcc/";
+    // var c99MsvcDir = $"{thisDir}/../lesson-5/c99-msvc/";
+    // CopyDirectory($"{c99GccDir}/src/", $"{c99MsvcDir}/src/", recursive: false);
 }
 
 
