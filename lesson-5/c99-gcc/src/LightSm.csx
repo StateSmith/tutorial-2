@@ -1,7 +1,7 @@
 #!/usr/bin/env dotnet-script
 // This is a c# script file
 
-#r "nuget: StateSmith, 0.9.2-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
+#r "nuget: StateSmith, 0.9.3-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
 
 using StateSmith.Input.Expansions;
 using StateSmith.Output.UserConfig;
@@ -44,6 +44,8 @@ public class LightSmRenderConfig : IRenderConfigC
         // user IRenderConfigC.CFileIncludes: whatever you want to put in here.
         """;
 
+    // Optional: customize how enumerations are declared so that gcc will use the smallest possible int type instead of a full int.
+    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__((packed)) {enumName}";
 
     // This nested class creates expansions. It can have any name.
     public class MyExpansions : UserExpansionScriptBase

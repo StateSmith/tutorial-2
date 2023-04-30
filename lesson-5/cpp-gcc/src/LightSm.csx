@@ -1,7 +1,7 @@
 #!/usr/bin/env dotnet-script
 // This is a c# script file
 
-#r "nuget: StateSmith, 0.9.2-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
+#r "nuget: StateSmith, 0.9.3-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
 
 using StateSmith.Input.Expansions;
 using StateSmith.Output.Gil.C99;
@@ -9,12 +9,7 @@ using StateSmith.Output.UserConfig;
 using StateSmith.Runner;
 using StateSmith.SmGraph;
 
-// NOTE!!! Idiomatic C++ code generation is coming. This will improve.
-// See https://github.com/StateSmith/StateSmith/issues/126
-// and https://github.com/StateSmith/StateSmith/issues/185
 SmRunner runner = new(diagramPath: "LightSm.drawio.svg", new LightSmRenderConfig(), transpilerId: TranspilerId.C99);
-var customizer = runner.GetExperimentalAccess().DiServiceProvider.GetInstanceOf<GilToC99Customizer>();
-customizer.CFileNameBuilder = (StateMachine sm) => $"{sm.Name}.cpp";
 runner.Run();
 
 // You can build multiple state machines in this script file. Just create a new SmRunner for each one.
@@ -30,6 +25,12 @@ runner.Run();
 // and provides diagram code expansions. This class can have any name.
 public class LightSmRenderConfig : IRenderConfigC
 {
+    // NOTE!!! Idiomatic C++ code generation is coming. This will improve.
+    // See https://github.com/StateSmith/StateSmith/issues/126
+    string IRenderConfigC.CFileExtension => ".cpp"; // the generated StateSmith C code is also valid C++ code
+    string IRenderConfigC.HFileExtension => ".h";   // could also be .hh, .hpp or whatever you like
+    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__((packed)) {enumName}";   // save RAM by packing enum type to smallest int type
+
     string IRenderConfig.AutoExpandedVars => """
         uint8_t count; // variable for state machine
         """;
