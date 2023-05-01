@@ -6,7 +6,7 @@
 #include <stdint.h>
 
 // user IRenderConfigC.HFileIncludes: whatever you want to put in here.
-typedef enum __attribute__((packed)) LightSm_EventId
+typedef enum __attribute__ ((packed)) LightSm_EventId
 {
     LightSm_EventId_DIM = 0,
     LightSm_EventId_INCREASE = 1,
@@ -18,7 +18,7 @@ enum
     LightSm_EventIdCount = 3
 };
 
-typedef enum __attribute__((packed)) LightSm_StateId
+typedef enum __attribute__ ((packed)) LightSm_StateId
 {
     LightSm_StateId_ROOT = 0,
     LightSm_StateId_OFF = 1,

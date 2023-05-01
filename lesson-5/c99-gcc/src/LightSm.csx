@@ -45,7 +45,7 @@ public class LightSmRenderConfig : IRenderConfigC
         """;
 
     // Optional: customize how enumerations are declared so that gcc will use the smallest possible int type instead of a full int.
-    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__((packed)) {enumName}";
+    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__ ((packed)) {enumName}";
 
     // This nested class creates expansions. It can have any name.
     public class MyExpansions : UserExpansionScriptBase

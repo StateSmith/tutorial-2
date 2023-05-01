@@ -4,10 +4,8 @@
 #r "nuget: StateSmith, 0.9.3-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
 
 using StateSmith.Input.Expansions;
-using StateSmith.Output.Gil.C99;
 using StateSmith.Output.UserConfig;
 using StateSmith.Runner;
-using StateSmith.SmGraph;
 
 SmRunner runner = new(diagramPath: "LightSm.drawio.svg", new LightSmRenderConfig(), transpilerId: TranspilerId.C99);
 runner.Run();
@@ -29,7 +27,7 @@ public class LightSmRenderConfig : IRenderConfigC
     // See https://github.com/StateSmith/StateSmith/issues/126
     string IRenderConfigC.CFileExtension => ".cpp"; // the generated StateSmith C code is also valid C++ code
     string IRenderConfigC.HFileExtension => ".h";   // could also be .hh, .hpp or whatever you like
-    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__((packed)) {enumName}";   // save RAM by packing enum type to smallest int type
+    string IRenderConfigC.CEnumDeclarer => "typedef enum __attribute__ ((packed)) {enumName}";   // save RAM by packing enum type to smallest int type
 
     string IRenderConfig.AutoExpandedVars => """
         uint8_t count; // variable for state machine
