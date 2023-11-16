@@ -34,7 +34,7 @@ Copy state `ON1` and rename it to `ON2`. Add transitions between the states.
 <br>
 
 # Add Transition Events
-Select the transition from `ON2` to `ON1` and press `F2` to edit the transition label. Type in `INCREASE`.
+Select the transition from `ON1` to `ON2` and press `F2` to edit the transition label. Type in `INCREASE`.
 
 Edit the other transition's label to be `DIM`.
 
