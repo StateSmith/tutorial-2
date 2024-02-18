@@ -5,6 +5,11 @@ One of the really cool features of draw.io is that the viewable svg file is also
 
 
 
+# Dark/Light Theme!
+All of these diagrams were drawn in dark mode. If you are using a light theme and notice any issues with the diagrams, please let me know.
+
+In vscode, you can switch between between light/dark from the command palette. `Ctrl+Shift+P` and then type `dark`. In the draw.io offline app, you can switch between light/dark by clicking the sun or moon icon in the top right.
+
 
 <br>
 

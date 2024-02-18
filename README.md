@@ -5,6 +5,12 @@ The instructions are cross platform and work with all supported programming lang
 
 If you notice something that could be improved, please open an issue or send a note on discord.
 
+# Dark/Light Theme!
+All of these diagrams were drawn in dark mode. If you are using a light theme and notice any issues with the diagrams, please let me know.
+
+In vscode, you can switch between between light/dark from the command palette. `Ctrl+Shift+P` and then type `dark`. In the draw.io offline app, you can switch between light/dark by clicking the sun or moon icon in the top right.
+
+
 # Lesson Overview
 * [Lesson-0](https://github.com/StateSmith/tutorial-2/tree/main/lesson-0) Install & StateMachine Interactive Examples
 * [Lesson-1](https://github.com/StateSmith/tutorial-2/tree/main/lesson-1) Running StateSmith and editing diagrams
