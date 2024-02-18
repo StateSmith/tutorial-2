@@ -5,6 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.FileSystemGlobbing;
 
+const string stateSmithVersionString = "0.9.9-alpha";
+
 readonly string thisDir = GetScriptFolder();
 readonly string projectRootDir = thisDir + "/../";
 
@@ -94,8 +96,8 @@ static void UpdateStateSmithNugetReference(string filePath)
         )
         (.*?) "
         """);
-
-    var newText = regex.Replace(text, "$1" + " 0.9.2-alpha\"");
+    
+    var newText = regex.Replace(text, "$1" + $" {stateSmithVersionString}\"");
     if (newText != text)
     {
         WriteLine(filePath);
