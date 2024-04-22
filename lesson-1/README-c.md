@@ -21,9 +21,12 @@ The [Plugin How To Use Guide](https://github.com/StateSmith/StateSmith-drawio-pl
 <br>
 
 # Add Another State
-The [How To Use guide](https://github.com/StateSmith/StateSmith-drawio-plugin/wiki/How-To-Use) covers this in more detail, so we will be brief here.
+Open the `LightSm` group by either double clicking on the group in VS Code, or selecting the group and choosing `Arrange > Navigation > Enter Group` in the draw.io app.
 
 Copy state `ON1` and rename it to `ON2`. Add transitions between the states.
+
+(See [How To Use guide](https://github.com/StateSmith/StateSmith-drawio-plugin/wiki/How-To-Use) for more info about using the VS code plugin.)
+
 
 ![](./docs/add-state-on2.gif)
 
