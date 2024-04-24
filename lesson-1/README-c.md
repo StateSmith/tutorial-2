@@ -30,7 +30,7 @@ Copy state `ON1` and rename it to `ON2`. Add transitions between the states.
 
 ![](./docs/add-state-on2.gif)
 
-
+NOTE! draw.io allows drawing states that look grouped, but aren't and vice versa. This is a bit weird when you first encounter it. Easy to adapt to though once you understand how draw.io behaves. See [issue 81](https://github.com/StateSmith/StateSmith/issues/81) for more info.
 
 
 
@@ -74,6 +74,8 @@ Notice that our state machine now has a state for `ON2`.
 
 # draw.io Bugs 🐛
 draw.io is a super awesome application, but it does have some bugs. Luckily, we can often have our plugin overcome them. Thank you open source!
+
+You might encounter the "non-related nodes overlap" validation message. See [issue 81](https://github.com/StateSmith/StateSmith/issues/81) for fix.
 
 If you run into an issue specific to draw.io, check our [draw.io plugin repo for issues](https://github.com/StateSmith/StateSmith-drawio-plugin/issues) and/or report there.
 
