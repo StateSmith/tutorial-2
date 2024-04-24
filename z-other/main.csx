@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.FileSystemGlobbing;
 
-const string stateSmithVersionString = "0.9.9-alpha";
+const string stateSmithVersionString = "0.9.10-alpha";
 
 readonly string thisDir = GetScriptFolder();
 readonly string projectRootDir = thisDir + "/../";

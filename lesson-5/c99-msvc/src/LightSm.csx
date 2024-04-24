@@ -1,7 +1,7 @@
 #!/usr/bin/env dotnet-script
 // This is a c# script file
 
-#r "nuget: StateSmith, 0.9.9-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
+#r "nuget: StateSmith, 0.9.10-alpha" // this line specifies which version of StateSmith to use and download from c# nuget web service.
 
 using StateSmith.Input.Expansions;
 using StateSmith.Output.UserConfig;

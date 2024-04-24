@@ -1,5 +1,5 @@
 #!/usr/bin/env dotnet-script
-#r "nuget: StateSmith, 0.9.9-alpha"
+#r "nuget: StateSmith, 0.9.10-alpha"
 
 using StateSmith.Output.UserConfig;
 using StateSmith.Runner;
