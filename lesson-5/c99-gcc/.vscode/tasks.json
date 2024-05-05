@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "gcc-build",
-            "command": "${workspaceFolder}/gcc/code_gen_compile.sh",
+            "command": "${workspaceFolder}/code_gen_compile.sh",
             "type": "process",
             "problemMatcher": "$gcc"
         },
