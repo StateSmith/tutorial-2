@@ -1,6 +1,6 @@
 # Language specific party time 🎉 
 
-Let's get---Bleeping nulls! It's the 🚨fuzz(y logic cops)!🚨
+About darn time we get to my favorite language. Wait! What's this this? It's the 🚨fuzz(y logic cops)!🚨
 
 # 👮‍♀️ Concurrency Cops! 👮
 > *"Hands off the keyboard! Did you just send multiple events to your state machine with no RESPECT for concurrency!?"*
