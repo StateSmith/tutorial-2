@@ -13,7 +13,7 @@ In vscode, you can switch between between light/dark from the command palette. `
 
 <br>
 
-# WHAT!? This Is A Web Example!? 😱
+# Where is my preferred programming language?
 Don't worry, there is a language specific example in a later lesson.
 
 All the **non**-language specific examples will use html/javascript because everyone has a browser that can run them.
