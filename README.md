@@ -1,3 +1,15 @@
+# See Newer Tutorials?
+If you are new to StateSmith, you probably want one of the newer tutorials.<br>
+See https://github.com/StateSmith/StateSmith/wiki/Learning-Resources
+
+This older tutorial shows how to use .csx files with StateSmith. In 2024, I only recommend using .csx files if you need very advanced features of StateSmith like custom modding the state machine graph just before code gen.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
 # Multi Programming Language Tutorial 🚀
 This tutorial will get you up and running with StateSmith as quick as possible.
 
